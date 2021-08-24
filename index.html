@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<link rel="stylesheet" href="present.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width-device-width, initial-scale-1.0">
+<title>Document</title>
+</head>
+<body>
+<h1>Ma première <em>truc</em> page web</h1>
+<h2>Autre chose <em>blablabla</em></h2>
+<form action="http://www.iro.umontreal.ca/~pilona/cgi-bin/pilona.cgi" method="POST">
+Nom: <input type="text" name="nom" id="nomPersonne" value="abc" size="30"><br>
+Code: <input type="password" name="pwd" size="30"><br>
+Code Postal: <input type="text" name="codePostal" placeholder="A1A 1A1"
+    pattern="[A-Za-z][0-9][A-Za-z] ?[0-9][A-Za-Z][0-9]"><br>
+Adresse: <textarea name="adresse" cols="60" rows="3"></textarea><br>
+Choisir votre couleur:
+<select size="4" name="couleur" multiple>
+    <option value="toto">Bleu</option>
+    <option value="2">Rouge</option>
+    <option>Orange</option>
+    <option value="3">Blanc</option>
+    <option value="Noir">Black</option>
+    <option>Violet</option>        
+</select><br>
+Choisir la langue: <input list="langues" name="langue"><br>
+<datalist id="langues">
+    <option>français</option>
+    <option>anglais</option>
+    <option>espagnol</option>
+    <option>allemand</option>
+</datalist>
+Langue de Préférence:
+Français <input type="radio" name="langPref" value="francais" checked>
+Anglais <input type="radio" name="langPref" value="anglais" ><br>
+Langue parlées:
+Français <input type="checkbox" name="langPref" value="francais" checked>
+Anglais <input type="checkbox" name="langPref" value="anglais" ><br>
+Commentaires: <textarea name="comm" cols="60" rows="3">Inscrivez vos commentaires ici...</textarea><br>
+<button onclick="submit();"><span style="color: red">Envoyer</span></button><input type="reset" value="Rétablir">
+</form>
+</body>
+
+
+
+</html>
